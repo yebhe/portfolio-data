@@ -1,4 +1,4 @@
-import { BarChart3 } from 'lucide-react'
+import { BarChart3, ExternalLink } from 'lucide-react'
 import { GithubIcon } from './BrandIcons.jsx'
 import { projects } from '../data/portfolio.js'
 import Reveal from './Reveal.jsx'
@@ -21,14 +21,27 @@ export default function Projects() {
               <div className="project-head">
                 <BarChart3 size={26} className="project-icon" />
                 <div className="project-links">
-                  <a
-                    href={p.repo}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`Dépôt GitHub de ${p.title}`}
-                  >
-                    <GithubIcon size={20} />
-                  </a>
+                  {p.badge && <span className="project-badge">{p.badge}</span>}
+                  {p.link && (
+                    <a
+                      href={p.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Site en ligne de ${p.title}`}
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  )}
+                  {p.repo && (
+                    <a
+                      href={p.repo}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Dépôt GitHub de ${p.title}`}
+                    >
+                      <GithubIcon size={20} />
+                    </a>
+                  )}
                 </div>
               </div>
               <h3>{p.title}</h3>

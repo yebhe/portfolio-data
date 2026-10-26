@@ -77,6 +77,21 @@ export const projects = [
     featured: false,
   },
   {
+    title: 'Digital Car — Plateforme interne',
+    subtitle: 'Django · Vue.js · Projet client en production',
+    description:
+      "Site développé pour Digital Car (secteur automobile) afin d'optimiser la gestion de leurs procédures internes — déployé et utilisé en production.",
+    highlights: [
+      "Dashboard admin avec workflow d'approbation (approuvé / rejeté / en attente)",
+      'Authentification JWT, mots de passe temporaires, emails OVH',
+      'Déploiement VPS OVH : PostgreSQL, Nginx, Gunicorn',
+    ],
+    tags: ['Django', 'Vue.js', 'PostgreSQL', 'Nginx', 'JWT'],
+    link: 'https://digitalcartech.fr/',
+    badge: 'En production',
+    featured: true,
+  },
+  {
     title: 'Gestion Commerciale — SaaS Multi-tenant',
     subtitle: 'Django REST · React · Docker',
     description:
@@ -90,60 +105,39 @@ export const projects = [
     repo: 'https://github.com/yebhe/gestion_commerciale',
     featured: false,
   },
-  {
-    title: 'Web Film',
-    subtitle: 'JavaScript · Front-end',
-    description:
-      'Application web de découverte de films avec recherche et affichage dynamique des informations.',
-    highlights: ['JavaScript vanilla', 'UI responsive', 'Intégration API'],
-    tags: ['JavaScript', 'HTML/CSS', 'API'],
-    repo: 'https://github.com/yebhe/web-film',
-    featured: false,
-  },
 ]
 
 export const skills = [
   {
     group: 'Data & BI',
     items: [
-      { name: 'Power BI — DAX, Power Query, dashboards', level: 90 },
-      { name: 'SQL — jointures, CTE, agrégations', level: 80 },
-      { name: 'Excel — Power Pivot, tableaux de bord', level: 85 },
-      { name: 'Python — bases de programmation', level: 60 },
+      'Power BI — DAX, Power Query, dashboards',
+      'SQL — jointures, CTE, agrégations',
+      'Excel — Power Pivot, tableaux de bord',
+      'Python — bases de programmation',
     ],
   },
   {
     group: 'Modélisation & Analyse',
     items: [
-      { name: 'Schémas en étoile / constellation', level: 85 },
-      { name: 'KPI, segmentation, analyse N-1', level: 85 },
-      { name: 'Data quality & déduplication', level: 80 },
-      { name: 'Bases de données relationnelles', level: 80 },
+      'Schémas en étoile / constellation',
+      'KPI, segmentation, analyse N-1',
+      'Data quality & déduplication',
+      'Bases de données relationnelles',
     ],
   },
   {
     group: 'Développement',
     items: [
-      { name: 'Python · Django · DRF', level: 80 },
-      { name: 'React · JavaScript', level: 75 },
-      { name: 'API REST · JWT', level: 80 },
-      { name: 'PostgreSQL · Docker · Git', level: 75 },
+      'Python · Django · DRF',
+      'React · JavaScript',
+      'API REST · JWT',
+      'PostgreSQL · Docker · Git',
     ],
   },
 ]
 
 export const experience = [
-  {
-    period: '2025',
-    title: 'Développeur Fullstack — Stage',
-    company: 'Digital Car · 2 mois',
-    points: [
-      "Application d'optimisation de la gestion des procédures internes (PDF) d'une entreprise du secteur automobile",
-      "Dashboard admin Django / Vue.js avec workflow d'approbation (approuvé / rejeté / en attente)",
-      'Authentification JWT, mots de passe temporaires, envoi d’emails OVH',
-      'Déploiement VPS OVH : PostgreSQL, Nginx, Gunicorn',
-    ],
-  },
   {
     period: '2025 — 2026',
     title: 'Projets Data Analytics — Power BI',
@@ -153,6 +147,17 @@ export const experience = [
       'Modèles en étoile et en constellation, ~470 mesures DAX au total',
       "Nettoyage et contrôle qualité : détection de 250 000 doublons, règles documentées",
       'Version Excel complète du dashboard supply chain (Power Query, Power Pivot)',
+    ],
+  },
+  {
+    period: '2025',
+    title: 'Développeur Fullstack — Stage',
+    company: 'Digital Car · 2 mois · digitalcartech.fr',
+    points: [
+      "Application d'optimisation de la gestion des procédures internes (PDF) d'une entreprise du secteur automobile",
+      "Dashboard admin Django / Vue.js avec workflow d'approbation (approuvé / rejeté / en attente)",
+      'Authentification JWT, mots de passe temporaires, envoi d’emails OVH',
+      'Déploiement VPS OVH : PostgreSQL, Nginx, Gunicorn — site en production',
     ],
   },
   {

@@ -1,42 +1,8 @@
-import { useEffect, useRef, useState } from 'react'
 import { BarChart3, Database, Code2 } from 'lucide-react'
 import { skills } from '../data/portfolio.js'
 import Reveal from './Reveal.jsx'
 
 const icons = [BarChart3, Database, Code2]
-
-function SkillBar({ item }) {
-  const ref = useRef(null)
-  const [w, setW] = useState(0)
-
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setW(item.level)
-          obs.disconnect()
-        }
-      },
-      { threshold: 0.4 },
-    )
-    obs.observe(el)
-    return () => obs.disconnect()
-  }, [item.level])
-
-  return (
-    <div className="skill-item" ref={ref}>
-      <div className="top">
-        <span>{item.name}</span>
-        <span className="pct">{item.level}%</span>
-      </div>
-      <div className="skill-bar">
-        <div className="fill" style={{ width: `${w}%` }} />
-      </div>
-    </div>
-  )
-}
 
 export default function Skills() {
   return (
@@ -54,9 +20,11 @@ export default function Skills() {
                 <h3>
                   <Icon size={20} /> {group.group}
                 </h3>
-                {group.items.map((item) => (
-                  <SkillBar key={item.name} item={item} />
-                ))}
+                <ul className="skill-list">
+                  {group.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
               </Reveal>
             )
           })}
