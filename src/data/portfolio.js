@@ -2,11 +2,11 @@ export const profile = {
   name: 'Mamadou Lamarana Diallo',
   role: 'Data Analyst',
   tagline: 'Power BI · SQL · Excel · Python',
-  availability: "En recherche d'alternance — Data Analyst",
-  bio: "Titulaire d'une Licence en Informatique (Côte d'Ivoire) et d'un BTS SIO option SLAM, je me spécialise en Data Analytics. Je conçois des modèles de données en étoile et en constellation, j'écris des mesures DAX avancées et je transforme des données brutes en tableaux de bord décisionnels.",
+  availability: 'Alternance ou stage alterné — Data Analyst',
+  bio: "En Bachelor 3 à l'IPSSI Lyon, je recherche une alternance ou un stage alterné (3 semaines entreprise / 1 semaine école) à partir d'octobre 2026, mobile sur toute la France. Je conçois des modèles en étoile et en constellation, j'écris des mesures DAX avancées et je transforme des données brutes en tableaux de bord décisionnels.",
   email: '1lamarana.mamadou@gmail.com',
   phone: '+33 7 45 52 33 12',
-  location: 'Paris, France',
+  location: 'Lyon, France — mobile France entière',
   github: 'https://github.com/yebhe',
   linkedin: 'https://www.linkedin.com/in/yebhe',
   cv: './cv.pdf',
@@ -109,7 +109,7 @@ export const skills = [
       { name: 'Power BI — DAX, Power Query, dashboards', level: 90 },
       { name: 'SQL — jointures, CTE, agrégations', level: 80 },
       { name: 'Excel — Power Pivot, tableaux de bord', level: 85 },
-      { name: 'Python — manipulation de données', level: 65 },
+      { name: 'Python — bases de programmation', level: 60 },
     ],
   },
   {
@@ -156,22 +156,22 @@ export const experience = [
     ],
   },
   {
-    period: '2024 — 2025',
-    title: 'Application Multi-tenant — Réseau de franchises',
-    company: 'Projet personnel · Django / React',
+    period: '2025 — 2026',
+    title: 'Gestion Commerciale — SaaS multi-tenant',
+    company: 'Projet personnel · Django REST / React',
     points: [
-      "Gestion hiérarchique d'entités et d'utilisateurs avec droits cloisonnés par rôle",
-      'API REST, authentification JWT, tests Pytest',
-      'Déploiement Docker / Nginx',
+      'SaaS de gestion de magasins : point de vente (POS), stock, clients, fournisseurs et rapports',
+      'PWA offline-first : IndexedDB + file de synchronisation',
+      'API REST Django, front React, conteneurisation Docker',
     ],
   },
 ]
 
 export const education = [
   {
-    period: 'Fév. 2026 — Fév. 2027',
+    period: 'Oct. 2026 — Oct. 2027',
     title: 'Bachelor 3 — Développement d’applications & Full Stack',
-    school: 'École IPSSI, Paris',
+    school: 'École IPSSI, Lyon — rythme : 3 sem. entreprise / 1 sem. école',
   },
   {
     period: '2023 — 2025',

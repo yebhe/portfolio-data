@@ -15,8 +15,9 @@ export default function About() {
           <Reveal className="about-text" delay={100}>
             <p>
               Je suis <strong>{profile.name}</strong>, Data Analyst basé à
-              Paris. Après une Licence en Informatique et un BTS SIO SLAM, je me
-              suis spécialisé dans l'analyse et la visualisation de données.
+              Lyon et mobile sur toute la France. Après une Licence en
+              Informatique et un BTS SIO SLAM, je me suis spécialisé dans
+              l'analyse et la visualisation de données.
             </p>
             <p>
               Ma force : une <strong>double compétence data + développement</strong>.

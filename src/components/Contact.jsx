@@ -12,8 +12,10 @@ export default function Contact() {
           <h2>Travaillons ensemble</h2>
           <p>
             Je recherche une <strong style={{ color: 'var(--accent)' }}>alternance
-            en Data Analyst</strong>. Disponible pour échanger sur vos besoins en
-            reporting, analyse de données ou développement d'outils décisionnels.
+            ou un stage alterné en Data Analyst</strong> (3 semaines entreprise /
+            1 semaine école), mobile sur toute la France. Disponible pour échanger
+            sur vos besoins en reporting, analyse de données ou développement
+            d'outils décisionnels.
           </p>
           <div className="contact-actions">
             <a href={`mailto:${profile.email}`} className="btn btn-primary">
