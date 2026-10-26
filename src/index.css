@@ -454,6 +454,16 @@ section {
   min-width: 90px;
 }
 
+.info-row a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.info-row a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 /* ---------- skills ---------- */
 
 .skills-grid {

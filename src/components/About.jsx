@@ -40,19 +40,19 @@ export default function About() {
             </div>
             <div className="info-row">
               <Mail size={16} /> <span className="k">Email</span>
-              <span style={{ wordBreak: 'break-all' }}>{profile.email}</span>
+              <a href={`mailto:${profile.email}`} style={{ wordBreak: 'break-all' }}>{profile.email}</a>
             </div>
             <div className="info-row">
               <Phone size={16} /> <span className="k">Téléphone</span>
-              <span>{profile.phone}</span>
+              <a href={`tel:${profile.phone.replace(/\s/g, '')}`}>{profile.phone}</a>
             </div>
             <div className="info-row">
               <GithubIcon size={16} /> <span className="k">GitHub</span>
-              <span>github.com/yebhe</span>
+              <a href={profile.github} target="_blank" rel="noreferrer">github.com/yebhe</a>
             </div>
             <div className="info-row">
               <LinkedinIcon size={16} /> <span className="k">LinkedIn</span>
-              <span>linkedin.com/in/yebhe</span>
+              <a href={profile.linkedin} target="_blank" rel="noreferrer">linkedin.com/in/yebhe</a>
             </div>
             <div className="info-row">
               <Languages size={16} /> <span className="k">Langues</span>

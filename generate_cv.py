@@ -66,26 +66,27 @@ def side_bullet(y, txt):
     pdf.multi_cell(SIDEBAR_W - 19.5, 4.2, txt, align='L')
     return pdf.get_y() + 0.8
 
-def side_contact(y, icon, text):
+def side_contact(y, icon, text, url=None):
     x = SIDEBAR_X + 8
     pdf.image(f'assets_cv/{icon}_w.svg', x=x, y=y + 0.1, w=3.3)
     pdf.set_xy(x + 4.8, y)
     pdf.set_font('a', '', 8.2)
     pdf.set_text_color(200, 210, 220)
-    pdf.multi_cell(SIDEBAR_W - 20.8, 4, text, align='L')
+    content = f'[{text}]({url})' if url else text
+    pdf.multi_cell(SIDEBAR_W - 20.8, 4, content, align='L', markdown=True)
     return pdf.get_y() + 1.6
 
 sy = 14
 sy = side_title(sy, 'Contact')
-for icon, text in [
-    ('pin', 'Lyon — mobile France'),
-    ('mail', '1lamarana.mamadou@gmail.com'),
-    ('phone', '+33 7 45 52 33 12'),
-    ('linkedin', 'linkedin.com/in/yebhe'),
-    ('github', 'github.com/yebhe'),
-    ('globe', 'yebhe.github.io/portfolio-data'),
+for icon, text, url in [
+    ('pin', 'Lyon — mobile France', None),
+    ('mail', '1lamarana.mamadou@gmail.com', 'mailto:1lamarana.mamadou@gmail.com'),
+    ('phone', '+33 7 45 52 33 12', 'tel:+33745523312'),
+    ('linkedin', 'linkedin.com/in/yebhe', 'https://www.linkedin.com/in/yebhe'),
+    ('github', 'github.com/yebhe', 'https://github.com/yebhe'),
+    ('globe', 'yebhe.github.io/portfolio-data', 'https://yebhe.github.io/portfolio-data'),
 ]:
-    sy = side_contact(sy, icon, text)
+    sy = side_contact(sy, icon, text, url)
 sy += 4
 
 sy = side_title(sy, 'Compétences Data')
@@ -156,7 +157,7 @@ def bullet(y, txt, indent=3):
     pdf.multi_cell(MAIN_W - indent - 3.5, 4.2, txt)
     return pdf.get_y()
 
-def entry(y, period, title, org, bullets):
+def entry(y, period, title, org, bullets, org_link=None):
     pdf.set_xy(MAIN_X, y)
     pdf.set_font('a', 'I', 8)
     pdf.set_text_color(*ACCENT)
@@ -170,7 +171,7 @@ def entry(y, period, title, org, bullets):
     pdf.set_xy(MAIN_X, y)
     pdf.set_font('a', 'I', 8.8)
     pdf.set_text_color(*GREY)
-    pdf.cell(MAIN_W, 4.5, org, new_x='END')
+    pdf.cell(MAIN_W, 4.5, org, new_x='END', link=org_link or '')
     y += 5.5
     for b in bullets:
         y = bullet(y, b) + 0.6
@@ -212,19 +213,19 @@ y = entry(y, '2025 — 2026',
         "produits, pays et moyens de paiement",
         "Ressources Humaines : effectifs, attrition, recrutement, rémunération — "
         "DAX avancé et contrôles qualité intégrés",
-    ])
+    ], org_link='https://github.com/yebhe?tab=repositories')
 
 # Expérience
 y = head('Expérience', y)
 y = entry(y, '2025 — Stage 2 mois',
     'Développeur Fullstack',
-    'Digital Car — secteur automobile',
+    'Digital Car — digitalcartech.fr',
     [
         "Application de gestion des procédures internes : dashboard admin Django / "
         "Vue.js avec workflow d'approbation (approuvé / rejeté / en attente)",
         "Authentification JWT, mots de passe temporaires, envoi d'emails OVH",
         "Déploiement VPS OVH : PostgreSQL, Nginx, Gunicorn",
-    ])
+    ], org_link='https://digitalcartech.fr/')
 y = entry(y, '2025 — 2026',
     'Gestion Commerciale — SaaS multi-tenant',
     'Projet personnel · github.com/yebhe/gestion_commerciale',
@@ -233,7 +234,7 @@ y = entry(y, '2025 — 2026',
         "fournisseurs et rapports",
         "PWA offline-first : IndexedDB + file de synchronisation",
         "API REST Django, front React, conteneurisation Docker",
-    ])
+    ], org_link='https://github.com/yebhe/gestion_commerciale')
 
 # Formation
 y = head('Formation', y)
