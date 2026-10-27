@@ -14,8 +14,8 @@ export const profile = {
 
 export const stats = [
   { value: '4', label: 'Dashboards Power BI' },
-  { value: '470+', label: 'Mesures DAX écrites' },
-  { value: '3', label: 'Modèles étoile / constellation' },
+  { value: '430+', label: 'Mesures DAX écrites' },
+  { value: '4', label: 'Modèles étoile / constellation' },
   { value: '250k', label: 'Doublons détectés' },
 ]
 
@@ -31,6 +31,7 @@ export const projects = [
       'Version Excel : Power Query + Power Pivot',
     ],
     tags: ['Power BI', 'DAX', 'Power Query', 'Power Pivot', 'Modélisation'],
+    image: './projects/sc.png',
     repo: 'https://github.com/yebhe/supply-chain-powerbi',
     featured: true,
   },
@@ -45,6 +46,7 @@ export const projects = [
       'Détection de 250 000 doublons',
     ],
     tags: ['Power BI', 'DAX', 'Data Quality', 'Finance'],
+    image: './projects/bank.png',
     repo: 'https://github.com/yebhe/pret-bancaire-powerbi',
     featured: true,
   },
@@ -59,6 +61,7 @@ export const projects = [
       'Analyse rétention & churn clients',
     ],
     tags: ['Power BI', 'DAX', 'Star Schema', 'KPI'],
+    image: './projects/ecom.png',
     repo: 'https://github.com/yebhe/ecommerce-powerbi',
     featured: true,
   },
@@ -73,6 +76,7 @@ export const projects = [
       'Contrôles qualité des données',
     ],
     tags: ['Power BI', 'DAX', 'RH', 'Data Quality'],
+    image: './projects/rh.png',
     repo: 'https://github.com/yebhe/ressource-humaine-powerbi',
     featured: false,
   },
@@ -102,6 +106,7 @@ export const projects = [
       'API REST Django + React + Docker',
     ],
     tags: ['Django REST', 'React', 'Docker', 'PostgreSQL', 'PWA'],
+    image: './projects/gc.png',
     repo: 'https://github.com/yebhe/gestion_commerciale',
     featured: false,
   },
@@ -114,7 +119,6 @@ export const skills = [
       'Power BI — DAX, Power Query, dashboards',
       'SQL — jointures, CTE, agrégations',
       'Excel — Power Pivot, tableaux de bord',
-      'Python — bases de programmation',
     ],
   },
   {
@@ -144,7 +148,7 @@ export const experience = [
     company: 'Projets personnels',
     points: [
       '4 dashboards complets : e-commerce, RH, supply chain, prêts bancaires',
-      'Modèles en étoile et en constellation, ~470 mesures DAX au total',
+      'Modèles en étoile et en constellation, ~430 mesures DAX au total',
       "Nettoyage et contrôle qualité : détection de 250 000 doublons, règles documentées",
       'Version Excel complète du dashboard supply chain (Power Query, Power Pivot)',
     ],

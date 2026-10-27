@@ -18,6 +18,16 @@ export default function Projects() {
               className="project-card"
               delay={(i % 2) * 100}
             >
+              {p.image && (
+                <a
+                  className="project-thumb"
+                  href={p.repo || p.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={p.image} alt={`Aperçu du projet ${p.title}`} loading="lazy" />
+                </a>
+              )}
               <div className="project-head">
                 <BarChart3 size={26} className="project-icon" />
                 <div className="project-links">
