@@ -87,7 +87,7 @@ export default function Hero() {
             <div className="hero-panel-header">
               <span>
                 <TrendingUp size={14} style={{ verticalAlign: '-2px' }} />{' '}
-                performance_overview.pbix
+                data_portfolio.pbix
               </span>
               <span className="live">
                 <span className="dot" style={{ width: 6, height: 6, borderRadius: '50%', background: 'currentColor', display: 'inline-block' }} />
@@ -97,12 +97,12 @@ export default function Hero() {
             <HeroChart />
             <div className="hero-panel-footer">
               <div className="mini-kpi">
-                <div className="v">98</div>
+                <div className="v">430+</div>
                 <div className="l">Mesures DAX</div>
               </div>
               <div className="mini-kpi">
                 <div className="v">★</div>
-                <div className="l">Star schema</div>
+                <div className="l">4 modèles</div>
               </div>
               <div className="mini-kpi">
                 <div className="v">N-1</div>
