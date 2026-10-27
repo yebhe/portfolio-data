@@ -191,9 +191,9 @@ export const education = [
 ]
 
 export const certifications = [
-  { name: 'AWS Cloud Foundations', issuer: 'AWS', year: '2023' },
-  { name: 'Python Essentials 1 & 2', issuer: 'Cisco', year: '2023' },
-  { name: 'Cybersecurity Fundamentals', issuer: 'Cisco', year: '2023' },
+  { name: 'AWS Academy Cloud Foundations', issuer: 'AWS', year: '2024' },
+  { name: 'Python Essentials 1 & 2', issuer: 'Cisco', year: '2024' },
+  { name: 'Introduction to Cybersecurity', issuer: 'Cisco', year: '2024' },
 ]
 
 export const languages = [

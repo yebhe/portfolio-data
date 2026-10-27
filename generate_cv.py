@@ -114,9 +114,9 @@ sy += 4
 
 sy = side_title(sy, 'Certifications')
 for t in [
-    'AWS Cloud Foundations (2023)',
-    'Python Essentials 1 & 2 — Cisco (2023)',
-    'Cybersecurity Fundamentals — Cisco',
+    'AWS Academy Cloud Foundations (2024)',
+    'Python Essentials 1 & 2 — Cisco (2024)',
+    'Introduction to Cybersecurity — Cisco (2024)',
 ]:
     sy = side_bullet(sy, t)
 sy += 4
