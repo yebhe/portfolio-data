@@ -179,7 +179,7 @@ export const experience = [
 export const education = [
   {
     period: 'Oct. 2026 — Oct. 2027',
-    title: 'Bachelor 3 — Développement d’applications & Full Stack',
+    title: 'Bachelor 3 — Data, IA & Développement',
     school: 'École IPSSI, Lyon — rythme : 3 sem. entreprise / 1 sem. école',
   },
   {

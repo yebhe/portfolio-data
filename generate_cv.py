@@ -239,7 +239,7 @@ y = entry(y, '2025 — 2026',
 # Formation
 y = head('Formation', y)
 for period, title, school in [
-    ('Oct. 2026 — Oct. 2027', "Bachelor 3 — Développement d'applications & Full Stack", 'École IPSSI, Lyon — rythme : 3 sem. entreprise / 1 sem. école'),
+    ('Oct. 2026 — Oct. 2027', 'Bachelor 3 — Data, IA & Développement', 'École IPSSI, Lyon — rythme : 3 sem. entreprise / 1 sem. école'),
     ('2023 — 2025', 'BTS SIO — option SLAM', 'Lycée Turgot, Paris'),
     ('2021 — 2023', 'Licence Informatique', "Côte d'Ivoire"),
 ]:
