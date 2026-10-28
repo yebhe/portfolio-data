@@ -3,7 +3,7 @@ export const profile = {
   role: 'Data Analyst',
   tagline: 'Power BI · SQL · Excel · Python',
   availability: 'Alternance ou stage alterné — Data Analyst',
-  bio: "En Bachelor 3 à l'IPSSI Lyon, je recherche une alternance ou un stage alterné (3 semaines entreprise / 1 semaine école) à partir d'octobre 2026, mobile sur toute la France. Je conçois des modèles en étoile et en constellation, j'écris des mesures DAX avancées et je transforme des données brutes en tableaux de bord décisionnels.",
+  bio: "En Bachelor 3 « Data, IA & Développement » à l'IPSSI Lyon, je recherche une alternance ou un stage alterné pouvant aller jusqu'à 1 an (rythme : 3 semaines entreprise / 1 semaine école), disponible immédiatement et mobile sur toute la France. Je conçois des modèles en étoile et en constellation, j'écris des mesures DAX avancées et je transforme des données brutes en tableaux de bord décisionnels.",
   email: '1lamarana.mamadou@gmail.com',
   phone: '+33 7 45 52 33 12',
   location: 'Lyon, France — mobile France entière',
